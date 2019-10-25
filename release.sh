@@ -19,7 +19,7 @@ release() {
 	sed -i -E "s/^FROM .+/FROM docker.elastic.co\\/elasticsearch\\/elasticsearch:$version/" Dockerfile
 	git add Dockerfile
 	git commit -m "Elasticsearch v$version"
-	git tag -a -m "Elasticsearch v$version"
+	git tag -a "v$version" -m "Elasticsearch v$version"
 }
 
 release "$@"
