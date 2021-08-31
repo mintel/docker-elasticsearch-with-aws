@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.13.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.13.2
 
 # Install plugins
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install -bs discovery-ec2
